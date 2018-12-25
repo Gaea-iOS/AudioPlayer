@@ -9,17 +9,17 @@
 import Foundation
 
 public protocol AudioItemQueueType {
-    var nextItem: AudioItem? { get }
-    var previousItem: AudioItem? { get }
-    func item(at index: Int) -> AudioItem?
+    var firstItem: AudioItem? { get }
+    func nextItem(of item: AudioItem?) -> AudioItem?
+    func previousItem(of item: AudioItem?) -> AudioItem?
 }
 
-public extension AudioItemQueueType {
-    public var hasNextItem: Bool {
-        return nextItem != nil
+extension AudioItemQueueType {
+    func hasNextItem(of item: AudioItem?) -> Bool {
+        return nextItem(of: item) != nil
     }
 
-    public var hasPreviousItem: Bool {
-        return previousItem != nil
+    func hasPreviousItem(of item: AudioItem?) -> Bool {
+        return previousItem(of: item) != nil
     }
 }

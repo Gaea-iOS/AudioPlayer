@@ -55,7 +55,7 @@ extension AudioPlayer {
 
     /// Plays previous item in the queue or rewind current item.
     public func previous() {
-        if let previousItem = queue?.previousItem {
+        if let previousItem = queue?.previousItem(of: currentItem) {
             currentItem = previousItem
         } else {
             seek(to: 0)
@@ -64,14 +64,14 @@ extension AudioPlayer {
 
     /// Plays next item in the queue.
     public func next() {
-        if let nextItem = queue?.nextItem {
+        if let nextItem = queue?.nextItem(of: currentItem) {
             currentItem = nextItem
         }
     }
 
     /// Plays the next item in the queue and if there isn't, the player will stop.
     public func nextOrStop() {
-        if let nextItem = queue?.nextItem {
+        if let nextItem = queue?.nextItem(of: currentItem) {
             currentItem = nextItem
         } else {
             stop()

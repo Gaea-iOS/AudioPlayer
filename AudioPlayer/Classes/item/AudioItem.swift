@@ -11,8 +11,10 @@ import AVFoundation
 import MediaPlayer
 
 open class AudioItem: NSObject {
+    public let id: UInt64
     public let soundURL: URL
-    public init(soundURL: URL) {
+    public init(id: UInt64, soundURL: URL) {
+        self.id = id
         self.soundURL = soundURL
     }
     open var artist: String?

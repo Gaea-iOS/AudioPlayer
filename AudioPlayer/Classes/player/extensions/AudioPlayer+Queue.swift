@@ -10,12 +10,12 @@ extension AudioPlayer {
 
     /// A boolean value indicating whether there is a next item to play or not.
     public var hasNext: Bool {
-        return queue?.hasNextItem ?? false
+        return queue?.hasNextItem(of: currentItem) ?? false
     }
 
     /// A boolean value indicating whether there is a previous item to play or not.
     public var hasPrevious: Bool {
-        return queue?.hasPreviousItem ?? false
+        return queue?.hasPreviousItem(of: currentItem) ?? false
     }
 
     /// Creates a queue according to the current mode and plays it.
@@ -23,11 +23,15 @@ extension AudioPlayer {
     /// - Parameters:
     ///   - items: The items to play.
     ///   - index: The index to start the player with.
-    public func play(at index: Int = 0) {
-        guard let item = queue?.item(at: index) else {
-            stop()
-            return
+    public func play(item: AudioItem? = nil) {
+        if item == nil {
+            if queue?.firstItem == nil {
+                stop()
+            } else {
+                currentItem = queue?.firstItem
+            }
+        } else {
+            currentItem = item
         }
-        currentItem = item
     }
 }
