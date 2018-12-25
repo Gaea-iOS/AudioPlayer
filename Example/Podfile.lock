@@ -1,0 +1,23 @@
+PODS:
+  - AudioPlayer (0.1.0):
+    - ReachabilitySwift (~> 4.3.0)
+  - ReachabilitySwift (4.3.0)
+
+DEPENDENCIES:
+  - AudioPlayer (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReachabilitySwift
+
+EXTERNAL SOURCES:
+  AudioPlayer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AudioPlayer: bbbe5a9968c6c3621155d416213d2c6c01b2b90a
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+
+PODFILE CHECKSUM: 9711b2e1d9ffeef473ddc4556364ec527f7d77ae
+
+COCOAPODS: 1.5.3
