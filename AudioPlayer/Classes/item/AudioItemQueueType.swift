@@ -8,18 +8,18 @@
 
 import Foundation
 
-protocol AudioItemQueueType {
+public protocol AudioItemQueueType {
     var nextItem: AudioItem? { get }
     var previousItem: AudioItem? { get }
     func item(at index: Int) -> AudioItem?
 }
 
-extension AudioItemQueueType {
-    var hasNextItem: Bool {
+public extension AudioItemQueueType {
+    public var hasNextItem: Bool {
         return nextItem != nil
     }
 
-    var hasPreviousItem: Bool {
+    public var hasPreviousItem: Bool {
         return previousItem != nil
     }
 }

@@ -43,7 +43,7 @@ public class AudioPlayer: NSObject {
 
     // MARK: Player
 
-    var queue: AudioItemQueueType?
+    public var queue: AudioItemQueueType?
 
     /// The audio player.
     var player: AVPlayer? {
