@@ -11,9 +11,9 @@ import AVFoundation
 import MediaPlayer
 
 open class AudioItem: NSObject {
-    open let id: UInt64
-    open let soundURL: URL
-    open init(id: UInt64, soundURL: URL) {
+    public let id: UInt64
+    public let soundURL: URL
+    public init(id: UInt64, soundURL: URL) {
         self.id = id
         self.soundURL = soundURL
     }
