@@ -82,6 +82,7 @@ extension AudioPlayer {
         if let nextItem = queue?.nextItem(of: currentItem) {
             currentItem = nextItem
         } else {
+            seek(to: 0)
             pause()
         }
     }
