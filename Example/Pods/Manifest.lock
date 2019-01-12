@@ -1,5 +1,5 @@
 PODS:
-  - AudioPlayer (0.1.0):
+  - AudioPlayer (0.5.2):
     - ReachabilitySwift (~> 4.3.0)
   - ReachabilitySwift (4.3.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AudioPlayer: bbbe5a9968c6c3621155d416213d2c6c01b2b90a
+  AudioPlayer: e1d510711ee1d8089ed7634637aeef46e2e8e6c3
   ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
 
 PODFILE CHECKSUM: 9711b2e1d9ffeef473ddc4556364ec527f7d77ae
