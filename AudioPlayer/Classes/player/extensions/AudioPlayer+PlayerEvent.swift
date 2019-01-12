@@ -17,9 +17,9 @@ extension AudioPlayer {
     func handlePlayerEvent(from producer: EventProducer, with event: PlayerEventProducer.PlayerEvent) {
         switch event {
         case .endedPlaying(let error):
-            if let item = currentItem {
-                delegate?.audioPlayer(self, didEndPlaying: item, error: error)
-            }
+//            if let item = currentItem {
+//                delegate?.audioPlayer(self, didEndPlaying: item, error: error)
+//            }
 
             if let error = error {
                 state = .failed(.foundationError(error))

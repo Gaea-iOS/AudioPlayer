@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B9B865321DCC59B00977B2A /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B865221DCC59A00977B2A /* ViewController2.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		0134499EAA1CAB7C7488062D /* Pods-AudioPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioPlayer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioPlayer_Tests/Pods-AudioPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1B9B865221DCC59A00977B2A /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		2B957CD56FC9AC7524FAA4C0 /* Pods-AudioPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioPlayer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioPlayer_Tests/Pods-AudioPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C2D2D8AF598CAA051CF34D4 /* Pods_AudioPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40104FE130905F1C4E32A524 /* Pods-AudioPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioPlayer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioPlayer_Example/Pods-AudioPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				1B9B865221DCC59A00977B2A /* ViewController2.swift */,
 			);
 			name = "Example for AudioPlayer";
 			path = AudioPlayer;
@@ -340,6 +343,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1B9B865321DCC59B00977B2A /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
