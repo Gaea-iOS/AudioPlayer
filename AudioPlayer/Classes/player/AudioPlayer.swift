@@ -71,9 +71,6 @@ public class AudioPlayer: NSObject {
     /// The current item being played.
     public internal(set) var currentItem: AudioItem? {
         didSet {
-            if let previousItem = oldValue {
-                delegate?.audioPlayer(self, didEndPlaying: previousItem, error: nil)
-            }
             if let currentItem = currentItem {
                 //Stops the current player
                 player?.rate = 0
