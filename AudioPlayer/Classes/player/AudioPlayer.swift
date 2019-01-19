@@ -169,7 +169,7 @@ public class AudioPlayer: NSObject {
     }
 
     /// Defines the rate of the player. Default value is 1.
-    public var rate = Float(1) {
+    @objc dynamic public var rate = Float(1) {
         didSet {
             if case .playing = state {
                 player?.rate = rate
